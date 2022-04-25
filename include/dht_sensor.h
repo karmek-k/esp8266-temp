@@ -19,6 +19,7 @@ namespace karmek
     {
     private:
         DHT_Unified device;
+        sensor_t *sensor;
         sensors_event_t *event;
 
     public:

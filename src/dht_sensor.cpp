@@ -6,6 +6,8 @@ DhtSensor::DhtSensor(uint8_t pin, DhtSensorType type)
     : device(pin, (uint8_t)type)
 {
     device.begin();
+    device.temperature().getSensor(sensor);
+    device.humidity().getSensor(sensor);
 }
 
 double DhtSensor::temperature()
