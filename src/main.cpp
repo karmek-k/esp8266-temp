@@ -1,9 +1,15 @@
 #include <Arduino.h>
 
-void setup() {
-  // put your setup code here, to run once:
+constexpr int baudRate{9600};
+
+void setup()
+{
+    Serial.begin(baudRate);
+    Serial.println("Hello, world!");
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
+void loop()
+{
+    Serial.println("123");
+    delay(1000UL);
 }
