@@ -19,6 +19,7 @@ void setup()
 
 void loop()
 {
+    delay(sensor.minDelayMs());
+
     Serial.println(sensor.temperature());
-    delay(1000UL);
 }
