@@ -11,8 +11,8 @@ namespace karmek
     {
     private:
         DHT_Unified device;
-        sensor_t *sensor;
-        sensors_event_t *event;
+        sensor_t sensor;
+        sensors_event_t event;
 
     public:
         DhtSensor(uint8_t pin, uint8_t type);
