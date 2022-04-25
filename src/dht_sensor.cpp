@@ -2,8 +2,8 @@
 
 using namespace karmek;
 
-DhtSensor::DhtSensor(uint8_t pin, DhtSensorType type)
-    : device(pin, (uint8_t)type)
+DhtSensor::DhtSensor(uint8_t pin, uint8_t type)
+    : device(pin, type)
 {
     device.begin();
     device.temperature().getSensor(sensor);

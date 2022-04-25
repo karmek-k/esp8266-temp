@@ -7,14 +7,6 @@
 
 namespace karmek
 {
-    enum class DhtSensorType
-    {
-        DHT11 = 11,
-        DHT12 = 12,
-        DHT21 = 21,
-        DHT22 = 22,
-    };
-
     class DhtSensor
     {
     private:
@@ -23,7 +15,7 @@ namespace karmek
         sensors_event_t *event;
 
     public:
-        DhtSensor(uint8_t pin, DhtSensorType type);
+        DhtSensor(uint8_t pin, uint8_t type);
 
         double temperature();
         double humidity();
