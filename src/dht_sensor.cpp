@@ -24,7 +24,7 @@ double DhtSensor::humidity()
     return event->relative_humidity;
 }
 
-int32_t DhtSensor::minDelayMs()
+uint32_t DhtSensor::minDelayMs()
 {
     return sensor->min_delay / 1000;
 }

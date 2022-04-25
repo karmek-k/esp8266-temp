@@ -20,7 +20,7 @@ namespace karmek
         double temperature();
         double humidity();
 
-        int32_t minDelayMs();
+        uint32_t minDelayMs();
     };
 }
 
